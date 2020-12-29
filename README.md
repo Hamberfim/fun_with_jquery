@@ -1,2 +1,2 @@
-# fun_with_jquery
+### Fun with JQuery
 old fun with jquery animation
