@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body {
+    max-width: 600px;
+    margin: 50px auto 300px;
+    font-family: sans-serif;
+    line-height: 1.9;
+}
+
+.boxes {
+  height: 50px;
+  margin: 10px;
+}
+
+.box {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 3px;
+  margin: 10px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  float: left;
+  background-color: rgb(57, 196, 239);
+  position: relative;
+}
+
+.box:nth-child(1n-23) {
+  background-color: rgb(30, 169, 211);
+}
+
+.box:nth-child(2n-23) {
+  background-color:rgb(24, 187, 236);
+}
+
+.box:nth-child(3n-23) {
+  background-color: rgb(114, 216, 247);
+}
+
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+// JQUERY
+$(document).ready(function(){
+
+    // some basic slideDown animations
+    $('.box:eq(0)').hide(100).delay(4850).slideDown(300);
+    $('.box:eq(1)').hide(100).delay(4650).slideDown(300);
+    $('.box:eq(2)').hide(100).delay(4450).slideDown(300);
+    $('.box:eq(3)').hide(100).delay(4250).slideDown(300);
+    $('.box:eq(4)').hide(100).delay(4050).slideDown(300);
+    $('.box:eq(5)').hide(100).delay(3850).slideDown(300);
+    $('.box:eq(6)').hide(100).delay(3650).slideDown(300);
+    $('.box:eq(7)').hide(100).delay(3450).slideDown(300);
+    $('.box:eq(8)').hide(100).delay(3250).slideDown(300);
+    $('.box:eq(9)').hide(100).delay(3050).slideDown(300);
+    $('.box:eq(10)').hide(100).delay(2850).slideDown(300);
+    $('.box:eq(11)').hide(100).delay(2650).slideDown(300);
+    $('.box:eq(12)').hide(100).delay(2450).slideDown(300);
+    $('.box:eq(13)').hide(100).delay(2250).slideDown(300);
+    $('.box:eq(14)').hide(100).delay(2050).slideDown(300);
+    $('.box:eq(15)').hide(100).delay(1850).slideDown(300);
+    $('.box:eq(16)').hide(100).delay(1650).slideDown(300);
+    $('.box:eq(17)').hide(100).delay(1450).slideDown(300);
+    $('.box:eq(18)').hide(100).delay(1250).slideDown(300);
+    $('.box:eq(19)').hide(100).delay(1050).slideDown(300);
+    $('.box:eq(20)').hide(100).delay(850).slideDown(300);
+    $('.box:eq(21)').hide(100).delay(650).slideDown(300);
+    $('.box:eq(22)').hide(100).delay(450).slideDown(300);
+    $('.box:eq(23)').hide(100).delay(250).slideDown(300);
+    
+
+    // move down via 'TOP'
+    $('.box:eq(0)').delay(5200).animate({top: '100px'});
+    $('.box:eq(1)').delay(5200).animate({top: '100px'});
+    $('.box:eq(2)').delay(5200).animate({top: '100px'});
+    $('.box:eq(3)').delay(5200).animate({top: '100px'});
+    $('.box:eq(4)').delay(5200).animate({top: '100px'});
+    $('.box:eq(5)').delay(5200).animate({top: '100px'});
+    $('.box:eq(6)').delay(5200).animate({top: '100px'});
+    $('.box:eq(7)').delay(5200).animate({top: '100px'});
+
+    $('.box:eq(8)').delay(5000).animate({top: '100px'});
+    $('.box:eq(9)').delay(5000).animate({top: '100px'});
+    $('.box:eq(10)').delay(5000).animate({top: '100px'});
+    $('.box:eq(11)').delay(5000).animate({top: '100px'});
+    $('.box:eq(12)').delay(5000).animate({top: '100px'});
+    $('.box:eq(13)').delay(5000).animate({top: '100px'});
+    $('.box:eq(14)').delay(5000).animate({top: '100px'});
+    $('.box:eq(15)').delay(5000).animate({top: '100px'});
+
+    $('.box:eq(16)').delay(4850).animate({top: '100px'});
+    $('.box:eq(17)').delay(4850).animate({top: '100px'});
+    $('.box:eq(18)').delay(4850).animate({top: '100px'});
+    $('.box:eq(19)').delay(4850).animate({top: '100px'});
+    $('.box:eq(20)').delay(4850).animate({top: '100px'});
+    $('.box:eq(21)').delay(4850).animate({top: '100px'});
+    $('.box:eq(22)').delay(4850).animate({top: '100px'});
+    $('.box:eq(23)').delay(4850).animate({top: '100px'});
+
+    // move odd down, even up
+    $('.box:eq(0)').delay(5600).animate({top: '0px'});
+    $('.box:eq(1)').delay(5200).animate({top: '200px'});
+    $('.box:eq(2)').delay(5600).animate({top: '0px'});
+    $('.box:eq(3)').delay(5200).animate({top: '200px'});
+    $('.box:eq(4)').delay(5600).animate({top: '0px'});
+    $('.box:eq(5)').delay(5200).animate({top: '200px'});
+    $('.box:eq(6)').delay(5600).animate({top: '0px'});
+    $('.box:eq(7)').delay(5200).animate({top: '200px'});
+
+    $('.box:eq(8)').delay(5600).animate({top: '0px'});
+    $('.box:eq(9)').delay(5000).animate({top: '200px'});
+    $('.box:eq(10)').delay(5600).animate({top: '0px'});
+    $('.box:eq(11)').delay(5000).animate({top: '200px'});
+    $('.box:eq(12)').delay(5600).animate({top: '0px'});
+    $('.box:eq(13)').delay(5000).animate({top: '200px'});
+    $('.box:eq(14)').delay(5600).animate({top: '0px'});
+    $('.box:eq(15)').delay(5000).animate({top: '200px'});
+
+    $('.box:eq(16)').delay(5650).animate({top: '0px'});
+    $('.box:eq(17)').delay(4850).animate({top: '200px'});
+    $('.box:eq(18)').delay(5650).animate({top: '0px'});
+    $('.box:eq(19)').delay(4850).animate({top: '200px'});
+    $('.box:eq(20)').delay(5650).animate({top: '0px'});
+    $('.box:eq(21)').delay(4850).animate({top: '200px'});
+    $('.box:eq(22)').delay(5650).animate({top: '0px'});
+    $('.box:eq(23)').delay(4850).animate({top: '200px'});
+
+    // move odd right, even left -movements are opposite
+    $('.box:eq(0)').animate({left: '50px'});
+    $('.box:eq(1)').animate({right: '20px'});
+    $('.box:eq(2)').delay(5600).animate({left: '50px'});
+    $('.box:eq(3)').delay(5200).animate({right: '20px'});
+    $('.box:eq(4)').delay(5600).animate({left: '50px'});
+    $('.box:eq(5)').delay(5200).animate({right: '20px'});
+    $('.box:eq(6)').delay(5600).animate({left: '50px'});
+    $('.box:eq(7)').delay(5200).animate({right: '20px'});
+
+    $('.box:eq(8)').delay(5600).animate({left: '50px'});
+    $('.box:eq(9)').delay(5000).animate({right: '20px'});
+    $('.box:eq(10)').delay(5600).animate({left: '50px'});
+    $('.box:eq(11)').delay(5000).animate({right: '20px'});
+    $('.box:eq(12)').delay(5600).animate({left: '50px'});
+    $('.box:eq(13)').delay(5000).animate({right: '20px'});
+    $('.box:eq(14)').delay(5600).animate({left: '50px'});
+    $('.box:eq(15)').delay(5000).animate({right: '20px'});
+
+    $('.box:eq(16)').delay(5650).animate({left: '50px'});
+    $('.box:eq(17)').delay(4850).animate({right: '20px'});
+    $('.box:eq(18)').delay(5650).animate({left: '50px'});
+    $('.box:eq(19)').delay(4850).animate({right: '20px'});
+    $('.box:eq(20)').delay(5650).animate({left: '50px'});
+    $('.box:eq(21)').delay(4850).animate({right: '20px'});
+    $('.box:eq(22)').delay(5650).animate({left: '50px'});
+    $('.box:eq(23)').delay(4850).animate({right: '20px'});
+
+    // reset
+    $('.box:eq(0)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(1)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(2)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(3)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(4)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(5)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(6)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(7)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(8)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(9)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(10)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(11)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(12)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(13)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(14)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(15)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(16)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(17)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(18)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(19)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(20)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(21)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(22)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+    $('.box:eq(23)').delay(6500).animate({top: '0px', right: '0px', bottom: '0px', left: '0px'});
+
+
+});
+</script>
+</head>
+<body>
+<section>
+	<article id="article-bounding">
+    	<div class="boxes">
+            <div class="box" id=0>0</div>
+            <div class="box" id=1>1</div>
+            <div class="box" id=2>2</div>
+            <div class="box" id=3>3</div>
+            <div class="box" id=4>4</div>
+            <div class="box" id=5>5</div>
+            <div class="box" id=6>6</div>
+            <div class="box" id=7>7</div>
+            <div class="box" id=8>8</div>
+            <div class="box" id=9>9</div>
+            <div class="box" id=10>10</div>
+            <div class="box" id=11>11</div>
+            <div class="box" id=12>12</div>
+            <div class="box" id=13>13</div>
+            <div class="box" id=14>14</div>
+            <div class="box" id=15>15</div>
+            <div class="box" id=16>16</div>
+            <div class="box" id=17>17</div>
+            <div class="box" id=18>18</div>
+            <div class="box" id=19>19</div>
+            <div class="box" id=20>20</div>
+            <div class="box" id=21>21</div>
+            <div class="box" id=22>22</div>
+            <div class="box" id=23>23</div>
+        </div>
+	</article>
+</section>
+</body>
+</html>
